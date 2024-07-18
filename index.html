@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://kit.fontawesome.com/6517fab855.js" crossorigin="anonymous"></script>
     
@@ -46,12 +46,12 @@
     <section id="home-section">
         <div class="container">
             <div class="row justify-content-center ">
-                <div class="col-md-6 " id="home-row">
+                <div class="col-md-6 " id="home-row" data-aos="fade-right" data-aos-duration="800">
                     <h1 style="color:#3f206b;font-family: Syne, sans-serif; font-optical-sizing: auto;font-weight: 600; font-style: normal;font-size: 3.5em;">​Lazoo - Unleash <br> the Freshness</h1>
                     <p class="about-me">Lazoo - Pure refreshment, bottled.  Real fruit, real taste, perfect for when you crave something naturally delicious.</p>                               
                       <a href="https://wa.me/+91 8590365352"><button class="order-btn" >Order Now</button></a>              
                 </div>
-                <div class="col-md-6 col-12 text-center">
+                <div class="col-md-6 col-12 text-center" data-aos="fade-left" data-aos-duration="1000">
                     <img src="images/4.jpg" alt="" class="me-image w-auto">
                 </div>
             </div>
@@ -63,16 +63,16 @@
 
     <section id="about-us-section">
       <div class="container">
-          <div class="row justify-content-center ">
-              <div class="col-md-6 " id="home-row">
+          <div class="row justify-content-center" >
+              <div class="col-md-6 " id="home-row" data-aos="fade-right" data-aos-duration="10000">
                 <h5 style="color:#3f206b;font-family: Syne, sans-serif; font-optical-sizing: auto;font-weight: 600; font-style: normal;font-size: 20 px;">About Us</h5>
                   <h1 style="color:#3f206b;font-family: Syne, sans-serif; font-optical-sizing: auto;font-weight: 600; font-style: normal;font-size: 3em;">Nature's Goodness in Every Bottle</h1>
                   <p class="about-us">At lazoofreshindia, we believe in harnessing nature's goodness to quench your thirst. Our juices are crafted with fresh, sun-ripened fruits and absolutely no artificial ingredients or preservatives. Every bottle bursts with flavor, offering a taste of pure refreshment.</p>                               
                     <a href="https://wa.me/+91 8590365352"><button class="order-btn-about" >Order Now</button></a>              
               </div>
-              <div class="col-md-6 col-12 text-center">
+              <div class="col-md-6 col-12 text-center" data-aos="fade-left" data-aos-duration="10000">
                  
-                  <div class="figure">
+                  <div class="figure" >
                     <img class="Sirv image-main a1" src="https://demo.sirv.com/hc/Bose-700-a.jpg?w=10&colorize.color=efefef" data-src="https://th.bing.com/th/id/OIG1.KLyaUv8Ki.LunZvgX3Qp?pid=ImgGn">
                     <img class="Sirv image-hover a1" data-src="https://static.wixstatic.com/media/18a13e_f252aa0849184edcb16af0cdcfc74502~mv2.jpg/v1/fill/w_344,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Lazoo%20Logo-06.jpg">
                   </div>
@@ -105,10 +105,10 @@
 
         <div class="row  pt-3">
           <div class="col-md-4">
-            <div class="image-hover gs "></div>
+            <div class="image-hover gs"></div>
           </div>
 
-          <div class="col-md-8 ">
+          <div class="col-md-8 " >
             <h1  class="gl-title">Lazoo - Pulpy Grape</h1>
             <h1 class="rs">30 ₹</h1>
             <h1 class="glp">Lazoo - Pure, fresh juice for a taste of real <br> refreshment.</h1></h1>
@@ -126,7 +126,7 @@
       <h5 style="color:#3f206b;font-family: Syne, sans-serif; font-optical-sizing: auto;font-weight: 600; font-style: normal;font-size: 20 px;">Get In Touch</h5>
       <h1 style="color:#3f206b;font-family: Syne, sans-serif; font-optical-sizing: auto;font-weight: 600; font-style: normal;font-size: 3em;">Contact Us</h1>
       <div class="row pt-2">
-        <div class="col-md-12">
+        <div class="col-md-12" >
           <center>
             <form class="form" id="submit-form"  action="">
               <div class="form-row">
@@ -208,10 +208,14 @@ background: linear-gradient(90deg, rgba(115,18,142,1) 0%, rgba(95,3,120,1) 100%)
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 <script>
+
+AOS.init();
+
   $("#submit-form").submit((e)=>{
       e.preventDefault()
       $.ajax({
@@ -233,4 +237,4 @@ background: linear-gradient(90deg, rgba(115,18,142,1) 0%, rgba(95,3,120,1) 100%)
 
 
 </body>
-</html>
+</html> 
