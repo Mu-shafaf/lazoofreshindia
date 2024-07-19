@@ -271,6 +271,6 @@ a {
             font-size: 1.3em;
         }
         a{
-            pointer-events:auto;
+            pointer-events:all;
         }
     }    
