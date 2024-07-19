@@ -215,16 +215,6 @@ background: linear-gradient(90deg, rgba(115,18,142,1) 0%, rgba(95,3,120,1) 100%)
 <script>
 
 AOS.init();
-
-
-
-    $(document).ready(() => {
-function scrollToAnchor(aid){
-    var aTag = $(aid);
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-}
-
-scrollToAnchor(location.hash);
     
 
   $("#submit-form").submit((e)=>{
