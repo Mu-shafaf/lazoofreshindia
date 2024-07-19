@@ -270,4 +270,7 @@ a {
             display: inline-block;
             font-size: 1.3em;
         }
+        a{
+            pointer-events:auto;
+        }
     }    
